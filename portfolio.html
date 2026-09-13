@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVM | Portfolio Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="traditional-border"></div>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=150&q=80"
+                alt="SVM Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-title">Sri Vinayaga Mills</span>
+                <span class="logo-subtitle">Stationery & Supplies</span>
+            </div>
+        </a>
+        <a href="index.html" class="logo-container">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="section text-center" style="background: linear-gradient(135deg, var(--cream), #fae5d3);">
+        <h1 class="section-title">Product Portfolio</h1>
+        <p style="color: var(--gray); max-width: 600px; margin: 1rem auto 0;">Explore our wide spectrum of school,
+            office, writing, and creative supplies.</p>
+    </header>
+
+    <section class="section">
+        <div class="filter-buttons reveal">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="school">School</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+            <button class="filter-btn" data-filter="art">Art & Craft</button>
+            <button class="filter-btn" data-filter="writing">Writing</button>
+        </div>
+
+        <div class="grid-3" id="portfolioGrid">
+            <div class="card portfolio-item reveal" data-category="school">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+                    alt="Premium Ruled Notebook">
+                <div class="card-body">
+                    <h3>Premium Ruled Notebook</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">School
+                        Essentials</span>
+                    <p style="margin-top: 0.5rem;">Durable binding with eco-friendly smooth white pages.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="writing">
+                <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80"
+                    alt="Colorful Gel Pen Set">
+                <div class="card-body">
+                    <h3>Colorful Gel Pen Set</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Writing
+                        Essentials</span>
+                    <p style="margin-top: 0.5rem;">Quick-drying ink with a comfortable rubber grip.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="art">
+                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=600&q=80"
+                    alt="Professional Drawing Kit">
+                <div class="card-body">
+                    <h3>Professional Drawing Kit</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Art
+                        & Craft</span>
+                    <p style="margin-top: 0.5rem;">Includes rich pigments, sketch pencils, and blending tools.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="school">
+                <img src="https://ik.imagekit.io/z3qqqvqczn/geo%20box.webp?updatedAt=1789221799138"
+                    alt="Metallic Geometry Box">
+                <div class="card-body">
+                    <h3>Metallic Geometry Box</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">School
+                        Essentials</span>
+                    <p style="margin-top: 0.5rem;">Rust-proof compass, divider, scales, and protractor.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="office">
+                <img src="https://ik.imagekit.io/z3qqqvqczn/sticky%20notes.jpg?updatedAt=1789222103764"
+                    alt="Neon Sticky Notes">
+                <div class="card-body">
+                    <h3>Neon Sticky Notes</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Office
+                        Supplies</span>
+                    <p style="margin-top: 0.5rem;">Strong adhesive notes for workflow planning and memos.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="school">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80"
+                    alt="School Stationery Kit">
+                <div class="card-body">
+                    <h3>School Stationery Kit</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">School
+                        Essentials</span>
+                    <p style="margin-top: 0.5rem;">All-in-one starter pack for elementary and middle schoolers.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="office">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80"
+                    alt="Office File Organizer">
+                <div class="card-body">
+                    <h3>Office File Organizer</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Office
+                        Supplies</span>
+                    <p style="margin-top: 0.5rem;">Durable multi-pocket accordion folder for document management.</p>
+                </div>
+            </div>
+            <div class="card portfolio-item reveal" data-category="writing">
+                <img src="https://ik.imagekit.io/z3qqqvqczn/HB.jpg?updatedAt=1789221525236"
+                    alt="Wooden HB Pencils">
+                <div class="card-body">
+                    <h3>Wooden HB Pencils</h3>
+                    <span
+                        style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Writing
+                        Essentials</span>
+                    <p style="margin-top: 0.5rem;">Break-resistant dark graphite pencils with soft erasers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>SVM</h3>
+                <p>Your trusted South Indian stationery destination providing quality school, office, and art
+                    essentials.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Stay connected with us on social media for new arrivals and offers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SVM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

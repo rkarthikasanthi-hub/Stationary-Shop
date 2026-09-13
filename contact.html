@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVM | Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="traditional-border"></div>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=150&q=80"
+                alt="SVM Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-title">Sri Vinayaga Mills</span>
+                <span class="logo-subtitle">Stationery & Supplies</span>
+            </div>
+        </a>
+        <a href="index.html" class="logo-container">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="section text-center" style="background: linear-gradient(135deg, var(--cream), #fae5d3);">
+        <h1 class="section-title">Get In Touch</h1>
+        <p style="color: var(--gray); max-width: 600px; margin: 1rem auto 0;">Have a query or want to place a bulk
+            order? Reach out to us today.</p>
+    </header>
+
+    <section class="section">
+        <div class="contact-grid">
+            <div class="contact-info-box reveal">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Store Information</h3>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4 style="color: var(--dark); font-size: 1.05rem;">Shop Address</h4>
+                        <p style="color: var(--gray); font-size: 0.95rem;">12, Anna Salai, T. Nagar,<br>Chennai, Tamil
+                            Nadu, India - 600017</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4 style="color: var(--dark); font-size: 1.05rem;">Phone Number</h4>
+                        <p style="color: var(--gray); font-size: 0.95rem;">+91 98401 12345</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4 style="color: var(--dark); font-size: 1.05rem;">Email Address</h4>
+                        <p style="color: var(--gray); font-size: 0.95rem;">hello@svmstationery.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4 style="color: var(--dark); font-size: 1.05rem;">Working Hours</h4>
+                        <p style="color: var(--gray); font-size: 0.95rem;">Monday – Saturday: 9:00 AM – 8:00
+                            PM<br>Sunday: 10:00 AM – 5:00 PM</p>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--dark);">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram" style="background-color: var(--primary); color: #fff;"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" style="background-color: var(--primary); color: #fff;"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube" style="background-color: var(--primary); color: #fff;"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form reveal">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.8rem;">Send Us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="Enter your 10-digit mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Select Service / Subject *</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="school">School Stationery Inquiry</option>
+                            <option value="office">Office Supplies Inquiry</option>
+                            <option value="art">Art & Craft Supplies</option>
+                            <option value="bulk">Bulk Order / Institutional Supply</option>
+                            <option value="custom">Gift / Custom Stationery</option>
+                            <option value="other">General Query</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" placeholder="Type your message or product requirements here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+
+                    <div id="formSuccess" class="form-success">
+                        Thank you! Your message has been sent successfully. We will contact you soon.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-container reveal">
+            <div class="map-overlay">
+                <span>📍 SVM Store Location - Chennai, Tamil Nadu</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>SVM</h3>
+                <p>Your trusted South Indian stationery destination providing quality school, office, and art
+                    essentials.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <p>Stay connected with us on social media for new arrivals and offers.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SVM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
